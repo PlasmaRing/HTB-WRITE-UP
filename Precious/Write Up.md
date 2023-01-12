@@ -19,8 +19,10 @@ Lalu coba masukan 'http://10.10.14.30:80' ke dalam website
 Didapati file pdf sebagai berikut  
 ![image](https://user-images.githubusercontent.com/92077284/211996521-9d32d634-253e-4ae5-b2f6-144b1ce999dc.png)  
 Setelah itu analisa file pdf menggunakan **exiftool**  
-![image](https://user-images.githubusercontent.com/92077284/211996948-fb392098-7706-4054-8e85-0d6e1068d64f.png)
-Disini saya memanfaatkan **pdfkit v0.8.6** sebagai celah untuk masuk kedalam sistem  
+![image](https://user-images.githubusercontent.com/92077284/211996948-fb392098-7706-4054-8e85-0d6e1068d64f.png)  
+Disini saya memanfaatkan **pdfkit v0.8.6** sebagai celah untuk masuk kedalam sistem, pdfkit adalah _PDF document generation library_ untuk browser, yang fungsinya memudahkan browser membuat file.  
+**CVE-2022–25765** Source: https://security.snyk.io/vuln/SNYK-RUBY-PDFKIT-2869795  
+Dari situ dapat dibuat _reverse shell_ 
 
 ## a
 ## a
