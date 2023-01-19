@@ -56,7 +56,7 @@ Yang saya lakukan pertama adalah masuk ke directory awal
 lalu disini saya memutuskan untuk masuk ke directory **home** karena biasanya user akan disimpan pada directory ini  
 ![image](https://user-images.githubusercontent.com/92077284/213358862-5dbc5421-0c27-4afe-b2af-ae987b8e7fea.png)  
 Ditemukan 2 user , yaitu **henry** dan **ruby**, disini saya mencoba masuk ke **henry**, namun ada keterbatasan akses
-setelah itu saya mencoba untuk masuk ke **ruby**
+setelah itu saya mencoba untuk masuk ke **ruby**  
 ![image](https://user-images.githubusercontent.com/92077284/213359072-53bf1b90-981f-44d6-b171-b49d3ba1d2c5.png)  
 Disini awalnya saya melihat apa saja yang ada dalam direcotry ini, lalu setelah mencoba-coba, ternyat directory **.bundle** dapat diakses, dan ternyata menampung kredensial dari **henry**
 
