@@ -74,7 +74,17 @@ Step berikutnya saya coba untuk mengakses *root* ternyata belum bisa
 
 Step selanjutnya saya memeriksa *privilage henry*  
 ![image](https://user-images.githubusercontent.com/92077284/213359780-b77de642-3b9e-4832-9939-adc80791b6bd.png)  
-Ternyata ada file yang mengatur akses privilage yaitu pada `/usr/bin/ruby /opt/update_dependencies.rb`
+Ternyata ada file yang mengatur akses privilage yaitu pada `/usr/bin/ruby /opt/update_dependencies.rb`  
+Disini saya coba untuk membaca file **update_dependencies.rb**  
+![image](https://user-images.githubusercontent.com/92077284/213360542-7f2c594e-b5be-4dde-92fe-dbe89aadac11.png)
+Setelah dianalisa, ternyata bagian ini dapat dilakukan **YAML Deserialization Attack** karena terdapat bagian pada file yang mengatakan `YAML.load(File.read("dependencies.yml"))`
+
+Source : https://blog.stratumsecurity.com/2021/06/09/blind-remote-code-execution-through-yaml-deserialization/
+
+Karena tadi yang menjadi permasalahan adalah soal _permission access_, 
+![image](https://user-images.githubusercontent.com/92077284/213361192-0d8ba32a-a978-4f30-84ac-36199edbdd59.png)  
+maka kita bisa merubah akses henry menjadi lebih tinggi, yaitu dengan mengubah file dependencies pada bagian **git_Set** menjadi `chmod u+s /bin/bash`
+
 
 
 
