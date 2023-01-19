@@ -50,6 +50,25 @@ lalu aktivitas akan terekam pada terminal yang tadi
 ![image](https://user-images.githubusercontent.com/92077284/213358242-9cd66e8b-48e6-4f71-a2b9-86420ffc9b8b.png)  
 _Note : IP berbeda karena WU dibuat pada hari berbeda_  
 
+Karena sudah masuk, maka disini akan dilakukan pencarian **flag**  
+Yang saya lakukan pertama adalah masuk ke directory awal  
+![image](https://user-images.githubusercontent.com/92077284/213358684-a63b2268-5d14-4eef-ad78-9a6dba781803.png)  
+lalu disini saya memutuskan untuk masuk ke directory **home** karena biasanya user akan disimpan pada directory ini  
+![image](https://user-images.githubusercontent.com/92077284/213358862-5dbc5421-0c27-4afe-b2af-ae987b8e7fea.png)  
+Ditemukan 2 user , yaitu **henry** dan **ruby**, disini saya mencoba masuk ke **henry**, namun ada keterbatasan akses
+setelah itu saya mencoba untuk masuk ke **ruby**
+![image](https://user-images.githubusercontent.com/92077284/213359072-53bf1b90-981f-44d6-b171-b49d3ba1d2c5.png)  
+Disini awalnya saya melihat apa saja yang ada dalam direcotry ini, lalu setelah mencoba-coba, ternyat directory **.bundle** dapat diakses, dan ternyata menampung kredensial dari **henry**
+
+Kredensial henry : `henry:Q3c1AqGHtoI0aXAYFH`  
+
+Setelah itu saya masuk ke akun henry menggunakan *ssh*  
+![image](https://user-images.githubusercontent.com/92077284/213359292-7cf62917-2301-4c03-95e2-779249e58a0c.png)  
+setelah itu ternyata sudah bisa diakses untuk **user.txt**, dan disini juga sekaligus menjadi **FLAG USER**
+![image](https://user-images.githubusercontent.com/92077284/213359417-af9dc795-4d34-4037-a835-8257176cc76c.png)
+
+**FLAG USER** = `a13c7cb8903ad65d586d143f089a7d31`
+
 
 
 
