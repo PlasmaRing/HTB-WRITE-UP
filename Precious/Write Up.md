@@ -83,12 +83,12 @@ Source : https://blog.stratumsecurity.com/2021/06/09/blind-remote-code-execution
 
 Karena tadi yang menjadi permasalahan adalah soal _permission access_, 
 ![image](https://user-images.githubusercontent.com/92077284/213361192-0d8ba32a-a978-4f30-84ac-36199edbdd59.png)  
-maka kita bisa merubah akses henry menjadi lebih tinggi, yaitu dengan menambahkan file dependencies.yml dengan template pada **source** pada bagian **git_Set** menjadi `chmod u+s /bin/bash`  
+maka kita bisa merubah akses henry menjadi lebih tinggi, yaitu dengan menambahkan file dependencies.yml dengan template pada **source** pada bagian **git_Set** menjadi `"chmod u+s /bin/bash"`  
 ![image](https://user-images.githubusercontent.com/92077284/213362505-18ff1a20-0db7-49ae-80ce-6f9286e13587.png)  
-![image](https://user-images.githubusercontent.com/92077284/213362447-39c07025-e88d-49ec-b762-cc487e083b1f.png)  
+![image](https://user-images.githubusercontent.com/92077284/213362901-2ac4d9a0-902b-415d-8a5e-1f312a733ad9.png)  
 ![image](https://user-images.githubusercontent.com/92077284/213362528-2e9937aa-77f8-4b07-a752-f343fe7d0f6b.png)  
 
-
+MASIH SALAH
 
 
 ## a
