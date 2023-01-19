@@ -69,6 +69,12 @@ setelah itu ternyata sudah bisa diakses untuk **user.txt**, dan disini juga seka
 
 **FLAG USER** = `a13c7cb8903ad65d586d143f089a7d31`
 
+Step berikutnya saya coba untuk mengakses *root* ternyata belum bisa  
+![image](https://user-images.githubusercontent.com/92077284/213359997-fdb4c873-b486-49d0-ba13-a690ca14b368.png)  
+
+Step selanjutnya saya memeriksa *privilage henry*  
+![image](https://user-images.githubusercontent.com/92077284/213359780-b77de642-3b9e-4832-9939-adc80791b6bd.png)  
+Ternyata ada file yang mengatur akses privilage yaitu pada `/usr/bin/ruby /opt/update_dependencies.rb`
 
 
 
