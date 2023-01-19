@@ -3,6 +3,7 @@
 ![Precious](https://user-images.githubusercontent.com/92077284/211991670-4b07aee9-b558-4b25-9b42-47e17659e981.png)
 
 ## Information Gathering
+![image](https://user-images.githubusercontent.com/92077284/213347545-adaa6f23-5523-436a-a37d-9aa5c28a627a.png)  
 ![image](https://user-images.githubusercontent.com/92077284/211992854-535f66c3-a172-4997-9d7d-82a58bb42449.png)  
 Pertama - tama lakukan proses **nmap** pada ip yang sudah diberikan pada web htb, hal ini berfungsi untuk memeriksa layanan yang tersedia dalam jaringan  
 Didapati ada 2 port, yaitu port **22 dan 80**, serta alamat web yaitu precious.htb  
@@ -15,17 +16,17 @@ Apabila dicoba isi 'http://google.com' maka akan menunjukan tampilan seperti ini
 ![image](https://user-images.githubusercontent.com/92077284/211995365-debd1424-dd52-41d1-a55e-4d5855cc7e37.png)
 disini akan dilakukan hosting pada port 80 dengan ip yang sesuai dengan ip di **tun0**, agar nantinya dapat ditangkap oleh website  
 ![image](https://user-images.githubusercontent.com/92077284/211996025-da71de3e-fdf1-44f5-9b52-be06a30c0176.png)  
-![image](https://user-images.githubusercontent.com/92077284/211996193-9f0b90e1-ca91-4d1f-94df-656e60a70f0c.png)  
+![image](https://user-images.githubusercontent.com/92077284/213347427-0cbe2aeb-7399-44cc-9ece-ac74a25d8131.png)  
 Lalu coba masukan 'http://10.10.14.30:80' ke dalam website  
 ![image](https://user-images.githubusercontent.com/92077284/211996453-a4bd650a-8551-4b1d-bd86-c485a273c7d7.png)  
 Didapati file pdf sebagai berikut, yang bila dibuka akan menampilkan list directory di tempat _serving http server_  
-
 ![image](https://user-images.githubusercontent.com/92077284/211996521-9d32d634-253e-4ae5-b2f6-144b1ce999dc.png)  
-Setelah itu analisa file pdf menggunakan **exiftool**  
+![image](https://user-images.githubusercontent.com/92077284/213354581-a64b7b8a-5786-406b-b3fa-3ae0ca537556.png)  
+Setelah itu analisa file pdf menggunakan **exiftool**, file di analisa menggunakan tool ini karena saya ingin mengetahui meta data dari file atau ada hal yang mencurigakan dari file.   
 ![image](https://user-images.githubusercontent.com/92077284/211996948-fb392098-7706-4054-8e85-0d6e1068d64f.png)  
-Disini saya memanfaatkan **pdfkit v0.8.6** sebagai celah untuk masuk kedalam sistem, pdfkit adalah _PDF document generation library_ untuk browser, yang fungsinya memudahkan browser membuat file.  
+Disini saya memanfaatkan **pdfkit v0.8.6** sebagai celah untuk masuk kedalam sistem, pdfkit adalah _PDF document generation library_ untuk browser, yang fungsinya memudahkan browser membuat file, namun pada versi ini terdapat celah kerentanan dimana kita dapat melakukan _Command Injection_ karena URL tidak di sanitasi.  
 **CVE-2022–25765** Source: https://security.snyk.io/vuln/SNYK-RUBY-PDFKIT-2869795  
-Dari situ dapat dibuat _reverse shell_ 
+Dari situ dapat dibuat sebuah _reverse shell_ 
 
 ## a
 ## a
