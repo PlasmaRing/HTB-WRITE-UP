@@ -64,7 +64,7 @@ Kredensial henry : `henry:Q3c1AqGHtoI0aXAYFH`
 
 Setelah itu saya masuk ke akun henry menggunakan *ssh*  
 ![image](https://user-images.githubusercontent.com/92077284/213359292-7cf62917-2301-4c03-95e2-779249e58a0c.png)  
-setelah itu ternyata sudah bisa diakses untuk **user.txt**, dan disini juga sekaligus menjadi **FLAG USER**
+setelah itu ternyata sudah bisa diakses untuk **user.txt**, dan disini juga sekaligus menjadi **FLAG USER**  
 ![image](https://user-images.githubusercontent.com/92077284/213359417-af9dc795-4d34-4037-a835-8257176cc76c.png)  
 
 **FLAG USER** = `a13c7cb8903ad65d586d143f089a7d31`
