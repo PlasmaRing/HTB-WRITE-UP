@@ -13,7 +13,7 @@ Untuk mengakses precious.htb diperlukan command `sudo vim /etc/hosts` untuk mena
 Masuk ke **10.10.11.189**  
 ![image](https://user-images.githubusercontent.com/92077284/211994354-6a6245cb-f01b-4bde-8634-d19b03e707eb.png)  
 Apabila dicoba isi 'http://google.com' maka akan menunjukan tampilan seperti ini, karena tertulis _Cannot load remote URL!_ maka saya coba untuk _serving http server_  
-![image](https://user-images.githubusercontent.com/92077284/211995365-debd1424-dd52-41d1-a55e-4d5855cc7e37.png)
+![image](https://user-images.githubusercontent.com/92077284/211995365-debd1424-dd52-41d1-a55e-4d5855cc7e37.png)  
 disini akan dilakukan hosting pada port 80 dengan ip yang sesuai dengan ip di **tun0**, agar nantinya dapat ditangkap oleh website  
 ![image](https://user-images.githubusercontent.com/92077284/211996025-da71de3e-fdf1-44f5-9b52-be06a30c0176.png)  
 ![image](https://user-images.githubusercontent.com/92077284/213347427-0cbe2aeb-7399-44cc-9ece-ac74a25d8131.png)  
@@ -87,11 +87,10 @@ maka kita bisa merubah akses henry menjadi lebih tinggi, yaitu dengan menambahka
 ![image](https://user-images.githubusercontent.com/92077284/213362505-18ff1a20-0db7-49ae-80ce-6f9286e13587.png)  
 ![image](https://user-images.githubusercontent.com/92077284/213362901-2ac4d9a0-902b-415d-8a5e-1f312a733ad9.png)  
 ![image](https://user-images.githubusercontent.com/92077284/213362528-2e9937aa-77f8-4b07-a752-f343fe7d0f6b.png)  
+Setelah menyimpan file `dependencies.yml` pada folder henry, sekarang coba untuk melakukan update permission dengan command `sudo /usr/bin/ruby /opt/update_dependencies.rb` dan sekarang directory **/bin/bash** sudah dapat diakses  
+![image](https://user-images.githubusercontent.com/92077284/218143683-2d4fdcc1-3adb-45b9-999f-f2061d9fd95e.png)  
+Setelah itu masuk kedalam bash untuk mengakses directory root, dan mengambil flagnya  
+![image](https://user-images.githubusercontent.com/92077284/218143897-e63a82af-ec0e-43dd-ac11-64c16937f6f3.png)  
 
-MASIH SALAH
+**FLAG ROOT** = `afa996c3ff48e061a0849b9f5848fff2`
 
-
-## a
-## a
-## a
-## a
