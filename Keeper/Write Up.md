@@ -1,5 +1,6 @@
-![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/80df468b-3f9e-4cc2-8fa9-b93fb689d627)# Keeper 
+# Keeper  
 **SOLVED : SEPT 07 | 2023**
+
 
 
 ## nmap
@@ -20,7 +21,6 @@ tambahkan `10.10.11.227    tickets.keeper.htb`
 ## exploit
 ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/791cc01b-a53c-4a47-9e43-e4eaa8849ef8)  
 ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/4406f6c6-502f-4467-be94-5a7cfb29a146)
-
 
 
 
