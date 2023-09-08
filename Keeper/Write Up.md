@@ -9,9 +9,6 @@ nmap 10.10.11.227 -p- -sVC  --min-rate 1000
 ```
 ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/32830cfb-6e00-4403-b98f-594a8d2948ee)  
 ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/593eeae6-4fd7-42f5-8be7-63aa57d7c19a)  
-
-
-
 ```
 sudo nano etc/hosts
 ```
@@ -60,7 +57,6 @@ Dari sini sudah ditarik kesimpulan bahwa file **.dmp**, merupakan file yang bisa
 ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/57e4a5f7-30d6-4003-9779-b72f5c973130)
 10. Dikarenakan terdapat beberapa Simbol yang diluar ASCII, maka saya mencoba mencarinya menggunakan **Google Search Engine**, dan ditemukan adanya nama makanan yang sangat mirip dengan **possible password** yakni **Rodgrod Med Flode**  
 ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/b2e06a31-133a-4e5e-a131-59e05b1eb159)  
-
    Source : https://www.196flavors.com/rodgrod-med-flode/  
    Password : `rødgrød med fløde`  
 
