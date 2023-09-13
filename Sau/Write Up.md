@@ -55,9 +55,15 @@ Port yang open di **22** dan **55555**, maka dicoba diakses pada `10.10.11.224:5
    ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/39e74b81-b93f-484d-9f99-499dc0a1d428)  
    **USER FLAG : 22366e50cf5e2f0f6ccceacadf92fef1**
 
-![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/e99f44e4-06f4-4afe-8c8e-fa155c20b8bc)  
-![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/b7d58424-7d33-459c-a6e6-ee486938422e)  
+## privilege escalation  
+1. Pertama-tama saya menjalankan command `sudo -l` untuk memeriksa permissions sudo yang dimiliki user puma.
+   ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/e99f44e4-06f4-4afe-8c8e-fa155c20b8bc)
+   dan disini terlihat bahwa `(ALL : ALL) NOPASSWD: /usr/bin/systemctl status trail.service`, maka untuk mengakses **systemctl status 
+   trail.service** tidak memerlukan password  
+   ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/b7d58424-7d33-459c-a6e6-ee486938422e)
+2. Untuk melakukan privilege escalation pada **sudo systemctl**, cukup menambahkan `!sh`, maka kita akan spawn shell lain, dan disini yang terjadi adalah shell dari root yang terbuka  
+Sumber : https://exploit-notes.hdks.org/exploit/linux/privilege-escalation/sudo/sudo-systemctl-privilege-escalation/  
 ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/b3e68dba-da9f-4449-993f-e8c77ef00190)  
-![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/6f33f1ac-099e-4983-966c-c0a2f249ce42)
-
-**ROOT FLAG : af1d5d215f180ea877ca659d9c7cdf88**
+3. Tahap berikutnya adalah mencari flag dari ROOT.  
+![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/6f33f1ac-099e-4983-966c-c0a2f249ce42)  
+   **ROOT FLAG : af1d5d215f180ea877ca659d9c7cdf88**
