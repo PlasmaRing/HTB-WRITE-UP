@@ -1,6 +1,6 @@
 # Sau  
 **SOLVED : 13 SEPT | 2023**  
-
+![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/abe5246d-f3b9-4e4f-9336-42f552b0697d)  
 
 ## nmap
 ![image](https://github.com/PlasmaRing/HTB-WRITE-UP/assets/92077284/fe6b7754-9647-4603-a391-2710a78c4113)
